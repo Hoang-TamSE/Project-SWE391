@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+    </head>
+
+    <body>
+        <form action="LoginServlet" method="POST">
+            User ID<input type="text" name="userID" required=""/></br>
+            Password<input type="password" name="password" required=""/></br>
+            <div class="g-recaptcha" data-sitekey="6LfmSy0eAAAAABdNDiOF7BGawKyhp6Fo3HZUnRHg"></div></br>
+            <input type="submit" name="action" value="login"/>
+            <input type="reset" value="rest"/>
+
+        </form>
+
+
+    </body>
+</html>
